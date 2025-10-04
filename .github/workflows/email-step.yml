@@ -1,0 +1,14 @@
+name: Email Step Demo
+
+on:
+  workflow_dispatch:  # allows manual trigger
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: 23f3001780@ds.study.iitm.ac.in
+        run: echo "Hello from GitHub Actions for 23f3001780@ds.study.iitm.ac.in"
