@@ -17,6 +17,9 @@ jobs:
         with:
           path: ~/.cache
           key: cache-0984560
+          restore-keys: |
+            cache-
 
       - name: Show cache result
-        run: echo "Cache hit: ${{ steps.cache.outputs.cache-hit }}"
+        run: |
+          echo "Cache hit: ${{ steps.cache.outputs.cache-hit }}"
